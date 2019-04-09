@@ -7,7 +7,7 @@ if (!filename) {
     console.log('Usage: tileinfo mytiles.mbtiles');
     process.exit(0);
 }
-const tiles = new MBTiles(`./${filename}?mode=ro`, (err, mbtiles) => {
+const tiles = new MBTiles(`${filename}?mode=ro`, (err, mbtiles) => {
     if (err) {
         console.error(err.message);
         process.exit(1);
