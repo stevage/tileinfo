@@ -1,19 +1,27 @@
 {
   "name": "tileinfo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Extract and print TileJSON info from a Mapbox Vector Tiles .mbtiles file.",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Steve Bennett <me@stevebennett.me> (http://stevebennett.me)",
   "license": "Apache-2.0",
   "dependencies": {
     "@mapbox/mbtiles": "^0.10.0",
     "@mapbox/tilelive": "^6.0.0"
-  }, "bin": {
+  },
+  "bin": {
     "tileinfo": "./index.js",
     "tilejson": "./index.js"
-  }, "files": [
+  },
+  "files": [
     "./index.js"
-  ], "keywords": ["mbtiles", "mapbox", "tilelive", "tilejson", "vector tiles"]
+  ],
+  "keywords": [
+    "mbtiles",
+    "mapbox",
+    "tilelive",
+    "tilejson",
+    "vector tiles"
+  ]
 }
