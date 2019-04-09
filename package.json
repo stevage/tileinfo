@@ -1,0 +1,17 @@
+{
+  "name": "tileinfo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Steve Bennett <me@stevebennett.me> (http://stevebennett.me)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@mapbox/mbtiles": "^0.10.0",
+    "@mapbox/tilelive": "^6.0.0"
+  }, "bin": {
+    "tileinfo": "./index.js",
+    "tilejson": "./index.js"
+  }
+}
