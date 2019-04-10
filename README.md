@@ -5,7 +5,7 @@ Ever need a TileJSON file for your .mbtiles? This tiny tool does that:
 ```
 $ npm install -g tileinfo
 
-$ tileinfo mytiles.json
+$ tileinfo mytiles.mbtiles
 {
   "scheme": "tms",
   "basename": "mytiles.mbtiles",
