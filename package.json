@@ -8,7 +8,9 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@mapbox/mbtiles": "^0.10.0",
-    "@mapbox/tilelive": "^6.0.0"
+    "@mapbox/tilelive": "^6.0.0",
+    "command-line-args": "^5.1.1",
+    "prettyjson": "^1.2.1"
   },
   "bin": {
     "tileinfo": "./index.js",
