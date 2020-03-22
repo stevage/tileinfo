@@ -4,13 +4,13 @@ const MBTiles = require('@mapbox/mbtiles');
 const prettyjson = require('prettyjson');
 const options = require('command-line-args')([
     { name: 'filename', type: String, defaultOption: true },
-    { name: 'no-stats', alias: 's', type: Boolean },
+    { name: 'stats', alias: 's', type: Boolean },
     { name: 'json', alias: 'j', type: Boolean },
     { name: 'help', alias: 'h', type: Boolean },
 ]);
 
 if (!options.filename || options.help) {
-    console.log('Usage: tileinfo [--no-stats] [--json] mytiles.mbtiles');
+    console.log('Usage: tileinfo [--stats] [--json] mytiles.mbtiles');
     process.exit(0);
 }
 const tiles = new MBTiles(`${options.filename}?mode=rw`, (err, mbtiles) => {
@@ -24,7 +24,7 @@ const tiles = new MBTiles(`${options.filename}?mode=rw`, (err, mbtiles) => {
             console.error(err.message);
             process.exit(1);
         }
-        if (options['no-stats']) {
+        if (!options['stats']) {
             delete(info.tilestats)
         }
         if (!options.json) {
