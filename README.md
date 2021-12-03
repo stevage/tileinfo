@@ -82,3 +82,11 @@ $ tileinfo --no-stats --json mytiles.json
   ]
 }
 ```
+
+### addtileinfo
+
+To add or update tile metadata, you can use addtileinfo:
+
+```
+addtileinfo --jsonfile myjsonfile.json mytiles.mbtiles
+```
